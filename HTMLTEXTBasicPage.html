@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML TEXT Basic Page</title>
+</head>
+
+<body>
+
+    <!--현재는 css로 처리하기 때문에 잘 사용하지 않음-->
+
+    <h1><b>b태그</b></h1>
+    <h1><i>i태그</i></h1>
+    <h1><small>small태그</small></h1>
+    <h1><sub>sub태그</sub></h1>
+    <h1><ins>ins태그</ins></h1>
+    <h1><del>del태그</del></h1>
+
+    <!--목록태그-->
+    <h1>ol tag</h1>
+    <ol>
+        <li>Facebook</li>
+        <li>Tweeter</li>
+        <li>Linked In</li>
+    </ol>
+
+    <h1>ul tag</h1>
+    <ul>
+        <li>Facebook</li>
+        <li>Tweeter</li>
+        <li>Linked In</li>
+    </ul>
+    <!--중첩 목록-->
+    <ul>
+        <li>HTML5</li>
+        <ol>
+            <li>Multimedia Tag</li>
+            <li>Connectivity</li>
+            <li>Device Access</li>
+        </ol>
+        <li>CSS3</li>
+        <ul>
+            <li>Animation</li>
+            <li>3D Transform</li>
+        </ul>
+    </ul>
+
+    <!--테이블 태그-->
+    <table border="1">
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+        </tr>
+        <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+        </tr>
+        <tr>
+            <td>Data2</td>
+            <td>Data2</td>
+        </tr>
+    </table>
+    <table border="1">
+        <caption>Caption</caption>
+        <colgroup>
+            <col span="2" style="background: red" />
+            <col style="background: blue;">
+        </colgroup>
+        <thead style="background: green;">
+            <th>Table Header</th>
+            <th>Table Header</th>
+            <th>Table Header</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Table Data</td>
+                <td>Table Data</td>
+                <td>Table Data</td>
+            </tr>
+            <tr>
+                <td>Table Data</td>
+                <td>Table Data</td>
+                <td>Table Data</td>
+            </tr>
+            <tr>
+                <td>Table Data</td>
+                <td>Table Data</td>
+                <td>Table Data</td>
+            </tr>
+        </tbody>
+        <tfoot style="background: yellow;">
+        <tr>
+            <td>Table Data</td>
+            <td>Table Data</td>
+            <td>Table Data</td>
+        </tr>
+    </tfoot>
+    </table>
+
+    <table>
+        <table border="1">
+            <tr>
+                <th colspan="3">Table Data</th>
+                <th rowspan="3">Table Data</th>
+            </tr>
+            <tr>
+                <td>Table Data</td>
+                <td rowspan="2">Table Data</td>
+                <td>Table Data</td>
+            </tr>
+            <tr>
+                <td>Table Data</td>
+                <td>Table Data</td>
+            </tr>
+        </table>
+
+    </table>
+    <!--이미지 태그-->
+    <img src="penguins.jpeg" alt="펭귄" width="300"/>
+    <img src="nothing" alt="그림이 존재하지 않습니다." width="300"/>
+
+    <!--입력 양식 태그-->
+    <form method="Get">
+        <h2>get방식</h2>
+        <input type="text" name="search"/>
+        <input type="submit"/>
+    </form>
+
+    <form method="Post">
+        <h2>post방식</h2>
+        <input type="text" name="search"/>
+        <input type="submit"/>
+    </form>
+
+    <form>
+        <h2>input태그 속성</h2>
+        
+
+        <input type="password" name="password" /><br />
+        <input type="file" name="file" /><br />
+        <input type="submit" /><br />
+        <input type="reset"><br /><br />
+        
+        <label for="name">이름</label>
+        <input type="text" id="name" /><br />
+        <input type="button" /><br />
+        <input type="checkbox`" /><br />
+        <input type="color" /><br />
+        <input type="date" /><br />
+        <input type="datetime" /><br />
+        <input type="datetime-local" /><br />
+        <input type="email" /><br />
+        <input type="text" id="name" /><br />
+        <input type="month" /><br />
+        <input type="number" /><br />
+        <input type="range" /><br />
+        <input type="search" /><br />
+        <input type="tel" /><br />
+        <input type="time" /><br />
+        <input type="url" /><br />
+        <input type="week" /><br />
+    
+        <textarea cols="30" rows="10">TextAera Text</textarea>
+    </form>
+
+    <select>
+        <option>김밥</option>
+        <option>떡볶이</option>
+        <option>순대</option>
+        <option>오뎅</option>
+    </select>
+    <select multiple="multiple">
+        <option>김밥</option>
+        <option>떡볶이</option>
+        <option>순대</option>
+        <option>오뎅</option>
+    </select>
+    <select>
+        <optgroup label="HTML5">
+            <option>Multimedia</option>
+            <option>Connectivity</option>
+            <option>Device Access</option>
+        </optgroup>
+        <optgroup label="CSS">
+            <option>Animation</option>
+            <option>3D Transform</option>
+        </optgroup>
+    </select>
+
+    <fieldset>
+        <legend>입력 양식</legend>
+        <table>
+            <tr>
+                <td><label for="name">이름</label></td>
+                <td><input id="name" type="text" /></td>
+            </tr>
+            <tr>
+                <td><label for="mail">이메일</label></td>
+                <td><input id="mail" type="email" /></td>
+            </tr>
+        </table>
+        <input type="submit" />
+    </fieldset>
+
+    <!--공간 분할 태그-->
+    <h2>div태그 사용</h2>
+    <div>Lorem ipsum</div>
+    <div>Lorem ipsum</div>
+    <div>Lorem ipsum</div>
+    <div>Lorem ipsum</div>
+    <div>Lorem ipsum</div>
+
+    <h2>span태그 사용</h2>
+    <span>Lorem ipsun</span>
+    <span>Lorem ipsun</span>
+    <span>Lorem ipsun</span>
+    <span>Lorem ipsun</span>
+    <span>Lorem ipsun</span>
+
+    
+</body>
+
+</html>
