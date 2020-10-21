@@ -1,0 +1,57 @@
+<style>
+    h1{
+        display: inline;
+        display: none;
+        display: block;
+    }
+    /* 
+    inline 속성은 마진이 좌 우로만 적용되고 inline-blcok 속성은 마진이 상 하 좌 우로 적용된다
+    inline 속성은 높이와 너비가 지정되지 않는다.
+    inline-block => inline처럼 세로로 출력되지만 block속성처럼 공간을 가지게됨
+    */
+    span{
+        margin: 10px;
+        padding: 10px;
+        width: 100px;
+        height: 100px;
+    }
+    .inline-block {
+        display: inline-block;
+    }
+    /* 
+    visibility: hidden과 display: none의 차이
+    visibility: hidden은 영역은 그대로 차지하면서 내용만 안보임
+    display는 영역자체가 사라짐
+    */
+    h1 {
+        /*visibility: hidden;*/
+    }
+
+    /* 요소의 투명도를 지정해줌 0~1 */
+    .black {
+        position: fixed;
+        left:0;
+        right:0;
+        top:0;
+        bottom:0; 
+        background-color: red;
+        opacity: 0.8;
+    }
+</style>
+
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<br>    
+<div class="black">
+    <h1>Hello World</h1>
+</div>
+<span>Hello</span>
+<span>Hello</span>
+<span>Hello</span>
+<h1>Hello</h1>
+<span class="inline-block">Hello</span>
+<span class="inline-block">Hello</span>
+<span class="inline-block">Hello</span>
