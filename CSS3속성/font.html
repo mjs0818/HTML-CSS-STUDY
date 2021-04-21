@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+<style>
+    p {
+        font-size: 2em;
+        /*
+        앞쪽부터 적용할 수 있는 폰트인지 확인하면서 적용하게 됨
+        사용자마다 보유하고 있는 글꼴이 다를 수 있음
+        안전을 위해서 serif(명조체), sans-serif(고딕체), monospace(고정폭 글꼴) 같은 기본 폰트를 지정
+        이 폰트는 웹 브라우저에서 지정하는 폰트로 generic-family 폰트라고 한다.
+        웹 브라우저는 우선 앞쪽부터 폰트가 있는지 확인 후 폰트가 사용자의 컴퓨터에 없다면 웹 브라우저에서 설정된 고유의 폰트를 출력한다.
+        크롬의 도구에서 폰트 설정을 살펴보면 확인 가능
+        */
+        font-family: MalgunGothic, AppleGothic, serif;
+        font-family: MalgunGothic, AppleGothic, sans-serif;
+        font-family: MalgunGothic, AppleGothic, monospace;
+        font-style: italic;
+        font-weight: 400;
+        /*
+        텍스트의 정렬을 지정
+        주의! text-align은 블록태그에서만 적용됨
+        */
+        text-align: center;
+        /*
+        글자의 줄높이를 지정해줌
+        text-align과 마찬가지로 블록태그에서만 적용
+        글자의 줄높이를 따로 지정해주는 경우는 거의 없지만
+        세로축 방향으로 중앙정렬할 때 사용한다 ex) 버튼
+        태그의 높이와 line-height를 동일하게 적용
+        */
+        line-height: 30px;
+    }
+    a {
+        /*
+        a태그에는 밑줄이 붙게되는데 이를 없애줄 수 있음
+        */
+        text-decoration: none;
+        color: white;
+    }
+        /*
+        a태그는 마우스를 올려놓으면 색깔이 바뀌는데 
+        hover를 사용해서 옵션을 조정할 수 있다
+        */
+    a:hover{
+        color:white;
+    }
+</style>
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nostrum deserunt, totam sunt voluptates voluptatum minima harum consequuntur tempora laborum dolorem nihil facere, neque earum, dolorum libero hic delectus commodi.</p>
+    <h1><a href='#'>link</a></h1>
+</body>
+</html>
