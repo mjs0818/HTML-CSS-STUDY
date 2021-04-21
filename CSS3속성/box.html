@@ -1,0 +1,41 @@
+<style>
+    /* 박스속성= margin, padding, border, width, height*/
+    /* div{
+        width: 300px;
+        height: 300px;
+        margin: 30px;
+        padding: 30px;
+        border: 5px solid black;
+        background-color: red;
+        box-sizing: border-box;
+    } */
+    /*
+    width와 height는 내용에만 적용
+    border를 기준으로 안쪽은 패딩 바깥쪽은 마진이다
+    마진은 배경색이 지정되지않는다
+    실질적인 크기구하기 :
+
+    너비: width + 2 * (padding+border+margin)
+    높이: Height + 2 * (padding+border+margin)
+    box-sizing: border-box를 사용하면 width와 Height를 padding과 border를 포함한 값으로
+    설정된다
+    */ 
+    .box {
+        width: 100px; height: 100px; 
+        margin: 50px;
+
+        
+        /* 
+        border-width: 10px;
+        border-style: solid;
+        border-color:red; 
+        */
+        border: 10px solid red;
+        border-radius: 50%;
+    }
+</style>
+
+<div>
+    Aute ullamco magna ipsum aliqua ex. Id duis ea esse incididunt velit magna aliquip ipsum. Duis laborum ea Lorem voluptate consectetur enim. Aliquip nulla laboris irure sit occaecat labore. Nisi incididunt laboris excepteur officia cupidatat culpa officia reprehenderit occaecat.  
+</div>
+<div class="box"></div>
