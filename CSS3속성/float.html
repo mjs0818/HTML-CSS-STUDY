@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+    <style>
+      /* .box {
+        
+        float 속성
+        float을 사용하면 보통 left, right를 지정해주는데 left를 해주면 태그가 왼쪽으로 붙게 되고, right를 지정하면 태그가 오른쪽으로 붙게 된다
+        레이아웃을 만들 때 많이 사용한다.
+        
+        
+        float: left;
+        width: 100px;
+        height: 100px;
+        background-color: red;
+      } */
+
+      .container {
+        /*
+        중앙정렬
+        너비를 지정하고 margin: 0 auto 로 지정
+        */
+        width: 960px;
+        margin: 0 auto;
+      }
+
+      .header {
+        height: 20px;
+        background-color: red;
+      }
+      .nav {
+        height: 20px;
+        background-color: green;
+      }
+      h1 {
+        margin: 0;
+      }
+      .footer {
+        height: 200px;
+        background-color: blue;
+      }
+      .center {
+        overflow: hidden;
+      }
+      .aside {
+        background-color: blueviolet;
+        width: 30%;
+        float: left;
+      }
+      .section {
+        background-color: cornflowerblue;
+        width: 70%;
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header"></div>
+      <div class="nav"></div>
+      <div class="center">
+        <div class="aside">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum similique
+          alias asperiores magni necessitatibus omnis, dicta aspernatur, impedit
+          ipsam commodi excepturi? Impedit nulla, deleniti perferendis quos
+          provident sunt voluptatibus ad?
+        </div>
+        <div class="section">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+          minima eos dolorem obcaecati laudantium error pariatur nostrum, libero
+          numquam ab facilis amet quo dolores eveniet veniam repellendus, ut non
+          sequi!
+        </div>
+      </div>
+      <div class="footer"><h1>footer</h1></div>
+    </div>
+  </body>
+</html>
