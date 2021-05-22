@@ -7,7 +7,7 @@
         
         float 속성
         float을 사용하면 보통 left, right를 지정해주는데 left를 해주면 태그가 왼쪽으로 붙게 되고, right를 지정하면 태그가 오른쪽으로 붙게 된다
-        레이아웃을 만들 때 많이 사용한다.
+        float 속성은 그림을 글자 위에 띄우기 위한 목적으로 만들어졌지만 현재는 레이아웃을 만들 때 많이 사용한다.
         
         
         float: left;
@@ -41,6 +41,11 @@
         background-color: blue;
       }
       .center {
+        /*
+        float 속성을 사용한 수평정렬
+        자식에 width와 float을 지정해주고 부모에 overflow: hidden을 지정해준다.
+        overflow를 적용하면 center가 자식들을 감싸서 영역을 잡게되는데 overflow를 지정하지 않으면 자식영역을 잃어버리고 자기 자신도 영역을 가지지 않게된다.
+        */
         overflow: hidden;
       }
       .aside {
